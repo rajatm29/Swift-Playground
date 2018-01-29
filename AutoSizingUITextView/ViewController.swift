@@ -35,13 +35,11 @@ class ViewController: UIViewController {
         
         
         // modify font size
-        
         textView.font = UIFont.preferredFont(forTextStyle: .headline)
         
         textView.delegate = self
         
         //disabling scroll in textview
-        
         textView.isScrollEnabled = false
         
         //to deal autosizing box when textview has default text in it
