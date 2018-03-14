@@ -6,3 +6,7 @@ A way to add an autosizing Text View in your iOS Application
 
 ## AnchorAutoLayout
 Use Anchoring for to your advantage!
+
+## Using the Spotify API's
+- Getting all playlists
+- tokens
