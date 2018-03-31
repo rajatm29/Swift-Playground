@@ -18,7 +18,9 @@ class ViewController: UIViewController {
         let stackView = UIStackView (ArrangedSubviews: [titleLabel, bodyLabel])
       
         stackView.axis = .vertical
-        stackView.frame = CGRect(x: 0, y: 0, width: 200, height: 400)
+        //stackView.frame = CGRect(x: 0, y: 0, width: 200, height: 400)
+        
+      
         view.addSubview(stackView)
     }
   
