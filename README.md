@@ -11,3 +11,5 @@ Use Anchoring for to your advantage!
 - Getting all playlists
 - Get all tracks
 - tokens
+
+## ChainAnimation
