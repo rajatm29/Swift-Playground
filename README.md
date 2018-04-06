@@ -12,4 +12,5 @@ Use Anchoring for to your advantage!
 - Get all tracks
 - tokens
 
-## ChainAnimation
+## JSON Decoder
+Cool way to decode JSON
