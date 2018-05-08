@@ -16,8 +16,6 @@ class ViewController: UIViewController {
         // Our Text View
         let textView = UITextView()
         textView.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
-        
-        
         textView.backgroundColor = .lightGray
         textView.text = "Defaut text we want to show the wrap of all the words that show on the screen"
         
@@ -55,7 +53,6 @@ extension ViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         //print(textView.text)
         //resize text view depending on text inside
-        
     
         let size = CGSize(width: view.frame.width, height: .infinity)
         let estimatedSize = textView.sizeThatFits(size)
