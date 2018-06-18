@@ -14,3 +14,6 @@ Use Anchoring for to your advantage!
 
 ## JSON Decoder
 Cool way to decode JSON
+
+## Shimmer Demo
+Shimmering text with Swift
