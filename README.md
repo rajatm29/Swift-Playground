@@ -1,4 +1,4 @@
-# my Blog Repos
+# Blog Repos
 This Repo will hold the code that will be written about in blog posts
 
 ## AutoSizing UITextView
