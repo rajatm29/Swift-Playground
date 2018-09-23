@@ -17,3 +17,6 @@ Cool way to decode JSON
 
 ## Shimmer Demo
 Shimmering text with Swift
+
+## RandomShuffle
+Using Swift4 to generate random numbers
