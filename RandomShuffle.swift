@@ -5,11 +5,9 @@ import UIKit
 
 let numbers = [3,1,5,2]
 
-
-
-func shuffledArray(nums: [Int]) -> [Int] {
+func shuffledArray(nums: [T]) -> [T] {
     var copyOfNums = nums
-    var shuffledArray = [Int]() //blank array 
+    var shuffledArray = [T]() //blank array 
     
     while(copyOfNums.count > 0) {
         let randomIndex = Int.random(in: 0..copyOfNums.count)
@@ -24,3 +22,4 @@ func shuffledArray(nums: [Int]) -> [Int] {
 }
 
 shuffledArray(nums: numbers)
+//applying generics
