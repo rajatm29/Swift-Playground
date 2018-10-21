@@ -1,0 +1,55 @@
+//
+//  ViewController.swift
+//  MemeMachine
+//
+//  Created by Rajat Monga on 9/13/18.
+//  Copyright © 2018 Rajat Monga. All rights reserved.
+//
+
+import UIKit
+import AVFoundation
+
+class ViewController: UIViewController {
+    
+    let captureSession = AVCaptureSession()
+    let previewLayer: CALayer!
+    
+    let captureDevice:AVCaptureDevice!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    func prepareCamera() {
+        
+        if let availableDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera], mediaType: AVMediaType.video, position: AVCaptureDevice.Position.back).devices {
+            captureDevice = availableDevices.first
+            beginSession()
+        }
+    }
+
+    func beginSession() {
+        do {
+            let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice)
+            captureSession.addInput(captureDeviceInput)
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        if let previewLayer = AVCaptureVideoPreviewLayer(session:captureSession) {
+            self.previewLayer = previewLayer
+            self.view.layer.addSublayer(self.previewLayer)
+            self.previewLayer.frame = self.view.layer.frame
+            captureSession.startRunning()
+            
+            
+            let dataOutput = AVCaptureVideoDataOutput()
+            dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString):NSNumber(value:kCVPixelFormatType_32BGRA)]
+        
+            dataOutput.alwaysDiscardsLateVideoFrames = true
+        }
+    }
+
+}
+
