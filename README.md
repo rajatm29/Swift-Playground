@@ -10,7 +10,7 @@ Use Anchoring for to your advantage!
 ## Using the Spotify API's
 - Getting all playlists
 - Get all tracks
-- tokens
+- Tokens
 
 ## JSON Decoder
 Cool way to decode JSON
